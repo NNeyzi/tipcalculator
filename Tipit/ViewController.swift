@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(true)
 
         tipControl.selectedSegmentIndex = defaults.object(forKey: "default%Index") as? Int ?? 0
+        calculateTip(self)
     }
 
     @IBAction func onTap(_ sender: Any) {
