@@ -17,6 +17,18 @@ class ViewController: UIViewController {
 
     let defaults = UserDefaults.standard
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        billField.becomeFirstResponder()
+        billField.delegate = self
+        
+        let dateOfLastBackground = defaults.object(forKey: "dateOfLastBackground") as! Date
+        if Date().timeIntervalSince(dateOfLastBackground) < 600 {
+            billField.text = defaults.object(forKey: "lastBill") as? String
+        }
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
 
@@ -51,3 +63,8 @@ extension ViewController: SettingsDelegate {
     }
 }
 
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        return false
+    }
+}
