@@ -512,6 +512,7 @@
 				124633D71F3FCEDD00F2012E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		124633D81F3FCEDD00F2012E /* Build configuration list for PBXNativeTarget "TipitTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +521,7 @@
 				124633DA1F3FCEDD00F2012E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		124633DB1F3FCEDD00F2012E /* Build configuration list for PBXNativeTarget "TipitUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +530,7 @@
 				124633DD1F3FCEDD00F2012E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
